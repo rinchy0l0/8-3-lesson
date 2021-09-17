@@ -13,7 +13,7 @@ public class Main {
         tom.name = "Tom";
         tom.kind = true;
         tom.age = 1;
-        tom.givesMilk = true;
+        tom.giveMilk = true;
         tom.displayInfo();
         tom.milk();
 

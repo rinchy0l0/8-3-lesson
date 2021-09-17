@@ -6,7 +6,7 @@ public class Cow {
     String name;
     boolean kind;
     int age;
-    boolean givesMilk;
+    boolean giveMilk;
 
     Cow(String a, String b, boolean t, int f) {
         cowColor = a;
@@ -21,7 +21,7 @@ public class Cow {
     Cow(String name, int age, boolean givesMilk) {
         this.name = name;
         this.age = age;
-        this.givesMilk = givesMilk;
+        this.giveMilk = givesMilk;
     }
 
     void displayInfo() {
@@ -34,7 +34,7 @@ public class Cow {
 
     Cow milk() {
         System.out.println("Hello my dear host!");
-        if (givesMilk) {
+        if (giveMilk) {
             System.out.println("I will give you milk");
         } else {
             System.out.println("I will not give you milk");
