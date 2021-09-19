@@ -3,22 +3,22 @@ package guru.qa;
 public class Main {
 
     public static void main(String[] args) {
-        Cow liza = new Cow("Pink", "Liza", true, 6);
+        Cow liza = new Cow("Pink", "Liza",6,  true, true);
         liza.displayInfo();
-        liza.milk();
-        liza.oldCow();
+        liza.answerTheHost();
+        liza.idOldAndKind();
 
         Cow tom = new Cow();
-        tom.cowColor = "Black";
+        tom.cow = "Black";
         tom.name = "Tom";
         tom.kind = true;
         tom.age = 1;
-        tom.givesMilk = true;
+        tom.isGiveMilk = true;
         tom.displayInfo();
-        tom.milk();
+        tom.answerTheHost();
 
-        Cow zhora = new Cow("Zhora", 2, true);
+        Cow zhora = new Cow("Blue", "Zhora", 2, true, false);
         zhora.displayInfoForZhora();
-        zhora.milk();
+        zhora.answerTheHost();
     }
 }

@@ -2,47 +2,41 @@ package guru.qa;
 
 public class Cow {
 
-    String cowColor;
+    String cow;
     String name;
     boolean kind;
     int age;
-    boolean giveMilk;
-
-    Cow(String a, String b, boolean t, int f) {
-        cowColor = a;
-        name = b;
-        kind = t;
-        age = f;
-    }
+    boolean isGiveMilk;
 
     Cow() {
     }
 
-    Cow(String name, int age, boolean givesMilk) {
+    Cow(String cowColor, String name, int age, boolean kind,  boolean isGiveMilk) {
+        this.cow = cowColor;
         this.name = name;
         this.age = age;
-        this.giveMilk = givesMilk;
+        this.kind = kind;
+        this.isGiveMilk = isGiveMilk;
     }
 
     void displayInfo() {
-        System.out.println("Color " + cowColor + ", name " + name + ", sex " + kind + ", age " + age);
+        System.out.println("Color " + cow + ", name " + name + ", sex " + kind + ", age " + age);
     }
 
     void displayInfoForZhora() {
         System.out.println("Cow name " + name + ", age cow " + age);
     }
 
-    Cow milk() {
+    void answerTheHost() {
         System.out.println("Hello my dear host!");
-        if (giveMilk) {
+        if (isGiveMilk) {
             System.out.println("I will give you milk");
         } else {
             System.out.println("I will not give you milk");
         }
-        return this;
     }
 
-    void oldCow() {
+    void idOldAndKind() {
         if (age > 15 && kind) {
             System.out.println("I`m the best cow and kind old cow!");
         }
